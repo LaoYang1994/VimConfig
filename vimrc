@@ -1,17 +1,22 @@
-set nu
+set number
 set tabstop=4
 set expandtab
 set shiftwidth=4
 set encoding=utf-8
-set cc=100
 
+"height ligth cusor
+set background=dark                 "or set bg=dark
 set cursorline
+set cursorcolumn
+set colorcolumn=100                 "or cc
+highlight CursorLine cterm=none ctermbg=236
+highlight CursorColumn cterm=none ctermbg=236
+highlight ColorColumn ctermbg=238
 
 syntax enable
 
 colorscheme molokai
 set t_Co=256
-set background=dark
 
 set backspace=indent,eol,start
 set hlsearch
