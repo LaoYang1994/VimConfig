@@ -6,7 +6,7 @@ cd ~/.vim
 
 echo "backup origin vimrc..."
 if [ -f "$HOME/.vimrc" ]; then
-        mv ~/.vimrc ~/.vimrc.`date +%Y%m%d`
+    mv ~/.vimrc ~/.vimrc.`date +%Y%m%d`
 fi
     
 echo "create new vimrc..."

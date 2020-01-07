@@ -12,9 +12,6 @@ colorscheme molokai
 set t_Co=256
 set background=dark
 
-inoremap ( ()<LEFT>
-inoremap [ []<LEFT>
-
 set backspace=indent,eol,start
 set hlsearch
 filetype off
@@ -24,7 +21,8 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/nerdcommenter'
-call vundle#end()
+Plugin 'AutoClose'                     "自动添加匹配的右括号
+
 filetype plugin indent on
 
 let g:ycm_server_keep_logfiles = 1
