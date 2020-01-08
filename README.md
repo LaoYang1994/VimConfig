@@ -4,7 +4,7 @@ My own vim configuration.
 ## Usage
 + git this repo
 ```bash
-https://github.com/LaoYang1994/VimConfig.git
+git clone https://github.com/LaoYang1994/VimConfig.git
 ```
 + Install Vundle
 ```bash
