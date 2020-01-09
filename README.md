@@ -6,7 +6,7 @@ My own vim configuration.
 ```bash
 git clone https://github.com/LaoYang1994/VimConfig.git
 ```
-+ Install Vundle
++ Install [Vundle](https://github.com/VundleVim/Vundle.vim)
 ```bash
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 ```
