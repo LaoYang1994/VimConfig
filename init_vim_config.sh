@@ -11,6 +11,9 @@ fi
     
 echo "create new vimrc..."
 ln -s ~/.vim/vimrc ~/.vimrc
+
+echo "link colorschemes"
+ln -s ~/.vim/bundle/vim-colorschemes/colors
     
 git submodule init
 git submodule update

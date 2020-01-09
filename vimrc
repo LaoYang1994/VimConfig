@@ -14,8 +14,8 @@ highlight CursorColumn cterm=none ctermbg=236
 highlight ColorColumn ctermbg=238
 
 syntax enable
-
 colorscheme molokai
+
 set t_Co=256
 
 set backspace=indent,eol,start
@@ -29,6 +29,7 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/nerdcommenter'
+Plugin 'flazz/vim-colorschemes'
 Plugin 'AutoClose'
 call vundle#end()
 filetype plugin indent on
@@ -76,8 +77,8 @@ nnoremap <silent> <F3> :exe "let HlUnderCursor=exists(\"HlUnderCursor\")?HlUnder
 "set runtimepath^=~/.vim/bundle/ctrlp.vim
 
     
-execute pathogen#infect()
-call pathogen#helptags()
+"execute pathogen#infect()
+"call pathogen#helptags()
 
 map <C-t> :NERDTreeToggle<CR>
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") &&b:NERDTreeType == "primary") | q | endif
