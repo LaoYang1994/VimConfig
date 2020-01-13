@@ -17,3 +17,5 @@ Just run the following scripts.
 ```bash
 sh init_vim_config.sh
 ```
++ modify the path in the vimrc file
++ compile YouCompleteMe
