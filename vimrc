@@ -8,7 +8,7 @@ set encoding=utf-8
 set background=dark                 "or set bg=dark
 set cursorline
 set cursorcolumn
-set colorcolumn=100                 "or cc
+set colorcolumn=80                 "or cc
 highlight CursorLine cterm=none ctermbg=236
 highlight CursorColumn cterm=none ctermbg=236
 highlight ColorColumn ctermbg=238
