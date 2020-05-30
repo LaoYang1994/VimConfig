@@ -24,16 +24,26 @@ set backspace=indent,eol,start
 set hlsearch
 
 filetype off
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
+"set rtp+=~/.vim/bundle/Vundle.vim
+"call vundle#begin()
 "Plugins
-Plugin 'VundleVim/Vundle.vim'
-Plugin 'Valloric/YouCompleteMe'
-Plugin 'scrooloose/nerdtree'
-Plugin 'scrooloose/nerdcommenter'
-Plugin 'flazz/vim-colorschemes'
-Plugin 'AutoClose'
-call vundle#end()
+"Plugin 'VundleVim/Vundle.vim'
+"Plugin 'Valloric/YouCompleteMe'
+"Plugin 'scrooloose/nerdtree'
+"Plugin 'scrooloose/nerdcommenter'
+"Plugin 'flazz/vim-colorschemes'
+"Plugin 'AutoClose'
+"call vundle#end()
+
+call plug#begin('~/.vim/plugged')
+Plug 'VundleVim/Vundle.vim'
+Plug 'Valloric/YouCompleteMe'
+Plug 'scrooloose/nerdtree'
+Plug 'scrooloose/nerdcommenter'
+Plug 'flazz/vim-colorschemes'
+Plug 'Raimondi/delimitMate'
+call plug#end()
+
 filetype plugin indent on
 
 
@@ -42,7 +52,7 @@ let g:mapleader = ","
 "ycm config
 let g:ycm_server_keep_logfiles = 1
 let g:ycm_server_log_level = 'debug'
-let g:ycm_server_python_interpreter='/home/v-holi2/Env/anaconda3/bin/python'
+let g:ycm_server_python_interpreter='/home/lhy/anaconda3/bin/python'
 let g:ycm_global_ycm_extra_conf='~/.vim/.ycm_extra_conf.py'
 
 set completeopt=longest,menu                                                "让Vim的补全菜单行为与一般IDE一致(参考VimTip1228)
@@ -51,7 +61,7 @@ autocmd InsertLeave * if pumvisible() == 0|pclose|endif                     "离
 let g:ycm_key_list_select_completion=['<TAB>', '<Down>']
 let g:ycm_key_list_previous_completion=['<S-TAB>', '<Up>']
 let g:ycm_confirm_extra_conf=0                                              "关闭加载.ycm_extra_conf.py提示
-let g:ycm_python_binary_path='/home/v-holi2/Env/anaconda3/bin/python'
+let g:ycm_python_binary_path='/home/lhy/anaconda3/bin/python'
 
 let g:ycm_collect_identifiers_from_tags_files=1                             " 开启 YCM 基于标签引擎
 let g:ycm_min_num_of_chars_for_completion=2                                 " 从第2个键入字符就开始罗列匹配项
