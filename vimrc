@@ -27,7 +27,6 @@ filetype off
 "set rtp+=~/.vim/bundle/Vundle.vim
 "call vundle#begin()
 "Plugins
-"Plugin 'VundleVim/Vundle.vim'
 "Plugin 'Valloric/YouCompleteMe'
 "Plugin 'scrooloose/nerdtree'
 "Plugin 'scrooloose/nerdcommenter'
@@ -36,7 +35,6 @@ filetype off
 "call vundle#end()
 
 call plug#begin('~/.vim/plugged')
-Plug 'VundleVim/Vundle.vim'
 Plug 'Valloric/YouCompleteMe'
 Plug 'scrooloose/nerdtree'
 Plug 'scrooloose/nerdcommenter'
