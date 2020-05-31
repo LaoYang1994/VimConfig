@@ -72,7 +72,6 @@ call plug#begin('~/.vim/plugged')
 Plug 'tell-k/vim-autopep8'
 Plug 'nvie/vim-flake8'
 Plug 'Valloric/YouCompleteMe'
-Plug 'davidhalter/jedi-vim'
 Plug 'scrooloose/nerdtree'
 Plug 'scrooloose/nerdcommenter'
 Plug 'flazz/vim-colorschemes'
