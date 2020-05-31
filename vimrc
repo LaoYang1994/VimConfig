@@ -1,19 +1,29 @@
+"设定行号
 set number
+"定义tab所等同的空格长度
 set tabstop=4
+"设为真，使用tab的时候就会自动转成空格
 set expandtab
+"用于程序中自动缩进所使用的空白长度指示
 set shiftwidth=4
+"Vim 内部使用的字符编码方式，包括 Vim 的 buffer (缓冲区)、菜单文本、消息文本等
 set encoding=utf-8
+
+"vim编辑模式下粘贴代码
+set pastetoggle=<F9>
+autocmd FileType python noremap <buffer> <F8> :call Autopep8()<CR>
 
 "height ligth cusor
 set background=dark                 "or set bg=dark
+"水平线
 set cursorline
+"竖线
 set cursorcolumn
+"行最大长度提示线
 set colorcolumn=100                 "or cc
 highlight CursorLine cterm=none ctermbg=236
 highlight CursorColumn cterm=none ctermbg=236
 highlight ColorColumn ctermbg=238
-
-set pastetoggle=<F9>
 
 syntax enable
 colorscheme molokai
@@ -34,7 +44,10 @@ filetype off
 "Plugin 'AutoClose'
 "call vundle#end()
 
+"plug插件管理
 call plug#begin('~/.vim/plugged')
+Plug 'tell-k/vim-autopep8'
+Plug 'nvie/vim-flake8'
 Plug 'Valloric/YouCompleteMe'
 Plug 'scrooloose/nerdtree'
 Plug 'scrooloose/nerdcommenter'
@@ -53,8 +66,10 @@ let g:ycm_server_log_level = 'debug'
 let g:ycm_server_python_interpreter='/home/lhy/anaconda3/bin/python'
 let g:ycm_global_ycm_extra_conf='~/.vim/.ycm_extra_conf.py'
 
-set completeopt=longest,menu                                                "让Vim的补全菜单行为与一般IDE一致(参考VimTip1228)
-autocmd InsertLeave * if pumvisible() == 0|pclose|endif                     "离开插入模式后自动关闭预览窗口
+"让Vim的补全菜单行为与一般IDE一致(参考VimTip1228)
+set completeopt=longest,menu
+"离开插入模式后自动关闭预览窗口
+autocmd InsertLeave * if pumvisible() == 0|pclose|endif
 
 let g:ycm_key_list_select_completion=['<TAB>', '<Down>']
 let g:ycm_key_list_previous_completion=['<S-TAB>', '<Up>']
