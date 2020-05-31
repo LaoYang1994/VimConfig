@@ -15,6 +15,10 @@ fi
 echo "cd to .vim directory"
 cd ~/.vim
 
+echo "Install requiresment"
+pip install -r ./requirements.txt
+
+
 echo "backup origin vimrc..."
 if [ -f "$HOME/.vimrc" ]; then
     if [ ! -L "$HOME/.vimrc" ]; then
