@@ -72,6 +72,7 @@ call plug#begin('~/.vim/plugged')
 Plug 'tell-k/vim-autopep8'
 Plug 'nvie/vim-flake8'
 Plug 'Valloric/YouCompleteMe'
+"Plug 'davidhalter/jedi-vim'
 Plug 'scrooloose/nerdtree'
 Plug 'scrooloose/nerdcommenter'
 Plug 'flazz/vim-colorschemes'
@@ -93,13 +94,13 @@ let g:ycm_semantic_triggers =  {
 			\ }
 "白名单
 let g:ycm_filetype_whitelist = { 
-			\ "c":1,
-			\ "cpp":1, 
-			\ "objc":1,
+            \ "c":1,
+            \ "cpp":1, 
+            \ "objc":1,
             \ "python": 1,
-			\ "sh":1,
-			\ "zsh":1,
-			\ }
+            \ "sh":1,
+            \ "zsh":1,
+            \ }
 "让Vim的补全菜单行为与一般IDE一致(参考VimTip1228)
 set completeopt=longest,menu
 "离开插入模式后自动关闭预览窗口
