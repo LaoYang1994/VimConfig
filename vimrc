@@ -189,7 +189,7 @@ let g:NERDToggleCheckAllLines = 1
 "=============================================================================
 " nerdtree-git-plugin
 "=============================================================================
-let g:NERDTreeIndicatorMapCustom = {
+let g:NERDTreeGitStatusIndicatorMapCustom = {
     \ "Modified"  : "✹",
     \ "Staged"    : "✚",
     \ "Untracked" : "✭",
