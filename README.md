@@ -15,3 +15,16 @@ sh init_vim_config.sh
 ```
 + modify the path in the vimrc file
 + compile YouCompleteMe
+ 1. go to YCM repo,
+```bash
+cd $HOME/.vim/plugged/YouCompleteMe
+```
+ 2. compile
+  + python + C/C++
+```bash
+python install.py
+```
+  + python only
+```bash
+python install.py --clang-completer
+```
