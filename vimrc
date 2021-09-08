@@ -22,7 +22,7 @@ set cursorline
 "竖线
 set cursorcolumn
 "行最大长度提示线
-set colorcolumn=80                 "or cc
+set colorcolumn=100                 "or cc
 "支持term(黑白终端), cterm(彩色终端), gui(gvim窗口), 可定义为: bold,
 "underline, reverse, italic, standout
 highlight CursorLine   cterm=none ctermbg=236
@@ -189,7 +189,7 @@ let g:NERDToggleCheckAllLines = 1
 "=============================================================================
 " nerdtree-git-plugin
 "=============================================================================
-let g:NERDTreeIndicatorMapCustom = {
+let g:NERDTreeGitStatusIndicatorMapCustom = {
     \ "Modified"  : "✹",
     \ "Staged"    : "✚",
     \ "Untracked" : "✭",
