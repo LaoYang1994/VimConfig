@@ -114,6 +114,8 @@ let g:ycm_server_log_level = 'info'
 let g:ycm_global_ycm_extra_conf='~/.vim/.ycm_extra_conf.py'
 "关闭加载.ycm_extra_conf.py提示
 let g:ycm_confirm_extra_conf=0
+"取消最大诊断数量限制
+let g:ycm_max_diagnostics_to_display = 0
 
 " 开启 YCM 基于标签引擎, 不是很懂
 let g:ycm_collect_identifiers_from_tags_files=1
